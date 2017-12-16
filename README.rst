@@ -1,5 +1,5 @@
 ===================
-Django YAA Settings
+Django Yaa-Settings
 ===================
 
 Yet Another App Settings
@@ -90,7 +90,7 @@ projects::
     from django.conf import settings
     SETTING = getattr(settings, 'MYAPP_SETTINGS', 'default')
 
-but unlike that simpler pattern, YAA Settings still works with standard setting
+but unlike that simpler pattern, Yaa-Settings still works with standard setting
 overrides for tests:
 
     https://docs.djangoproject.com/en/2.0/topics/testing/tools/#overriding-settings
