@@ -2,7 +2,18 @@
 Django Yaa-Settings
 ===================
 
-Yet Another App Settings
+Yet Another App Settings - manage settings for your reusable app
+
+
+Features
+========
+
+* Easy to install and use
+* Provide defaults and validate user settings before use
+* Works with Django's settings overrides in tests
+
+
+Version 1.0.0; supports Django 1.8, 1.11 and 2.0 on Python 2.7 and 3.4 upwards.
 
 
 Installation
@@ -49,6 +60,7 @@ In your app, create a local ``app_settings.py``::
 * Only define one ``AppSettings`` subclass per file
 * Set the ``prefix`` attribute if you want to give your settings a prefix in
   Django's settings.
+* Settings should be uppercase for consistency with main Django settings.
 
 
 Now you can access your app's settings directly on the class, without the
@@ -80,6 +92,9 @@ It's always a good idea to namespace your settings based on your app's name to
 avoid collisions with other apps. By using the ``prefix`` attribute you can
 omit the prefix throughout your app, making your code neater.
 
+The prefix is optional and you can manually namespace your settings if you'd
+prefer the consistency of using the same full setting throughout your project.
+
 
 Namespace settings while retaining test support
 -----------------------------------------------
@@ -99,7 +114,7 @@ overrides for tests:
 Create dynamic defaults using properties
 ----------------------------------------
 
-A property on your `AppSettings` subclass will be evaluated every time you
+A property on your ``AppSettings`` subclass will be evaluated every time you
 access it, unless you override it in Django's settings. This allows you to
 generate dynamic defaults at runtime.
 
@@ -108,6 +123,6 @@ generate dynamic defaults at runtime.
 Validate or standardise settings using methods
 ----------------------------------------------
 
-A method on your `AppSettings` subclass will be called every time you access
+A method on your ``AppSettings`` subclass will be called every time you access
 it, and will be passed the value you have defined in Django's settings. This
 allows you to validate settings, or process them ready for use.
