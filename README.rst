@@ -10,7 +10,7 @@ Yet Another App Settings - manage settings for your reusable app
 .. image:: https://travis-ci.org/radiac/django-yaa-settings.svg?branch=master
     :target: https://travis-ci.org/radiac/django-yaa-settings
 
-.. image:: https://coveralls.io/repos/radiac/django-yaa-settings/badge.svg?branch=master&service=github
+.. image:: https://coveralls.io/repos/github/radiac/django-yaa-settings/badge.svg?branch=master
     :target: https://coveralls.io/github/radiac/django-yaa-settings?branch=master
 
 
@@ -22,7 +22,7 @@ Features
 * Works with Django's settings overrides in tests
 
 
-Version 1.0.0; supports Django 1.8, 1.11 and 2.0 on Python 2.7 and 3.4 upwards.
+Version 0.1.0; supports Django 1.8, 1.11 and 2.0 on Python 2.7 and 3.4 upwards.
 
 
 Installation
