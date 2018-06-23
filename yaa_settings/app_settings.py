@@ -44,13 +44,11 @@ class AppSettings(six.with_metaclass(AppSettingsType)):
                 return dct[attr](self, val)
 
             # Handle a property (defined on the AppSettings subclass)
-            if isinstance(val, property):
-                return val.__get__(self, self.__class__)
+            if isinstance(dct[attr], property):
+                return dct[attr].__get__(self, self.__class__)
 
             # If not overridden, return default value
             if val is Undefined:
-                if isinstance(dct[attr], property):
-                    return dct[attr].__get__(self, self.__class__)
                 return dct[attr]
 
             return val
