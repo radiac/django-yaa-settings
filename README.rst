@@ -4,6 +4,15 @@ Django Yaa-Settings
 
 Yet Another App Settings - manage settings for your reusable app
 
+* Project site: http://radiac.net/projects/django-yaa-settings/
+* Source code: https://github.com/radiac/django-yaa-settings
+
+.. image:: https://travis-ci.org/radiac/django-yaa-settings.svg?branch=master
+    :target: https://travis-ci.org/radiac/django-yaa-settings
+
+.. image:: https://coveralls.io/repos/radiac/django-yaa-settings/badge.svg?branch=master&service=github
+    :target: https://coveralls.io/github/radiac/django-yaa-settings?branch=master
+
 
 Features
 ========

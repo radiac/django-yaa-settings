@@ -1,0 +1,6 @@
+include LICENSE tox.ini .travis.yml docs/conf.py docs/Makefile
+recursive-include yaa_settings *
+recursive-exclude yaa_settings *.pyc __pycache__
+recursive-include tests *
+recursive-exclude tests *.pyc
+prune docs/_build
