@@ -115,9 +115,9 @@ projects::
     SETTING = getattr(settings, 'MYAPP_SETTINGS', 'default')
 
 but unlike that simpler pattern, Yaa-Settings still works with standard setting
-overrides for tests:
-
-    https://docs.djangoproject.com/en/2.0/topics/testing/tools/#overriding-settings
+overrides for tests - see the
+`Django documentation <https://docs.djangoproject.com/en/2.0/topics/testing/tools/#overriding-settings>`_
+for more details.
 
 
 Create dynamic defaults using properties
