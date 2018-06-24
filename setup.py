@@ -29,13 +29,13 @@ if len(sys.argv) > 1 and sys.argv[1] == 'test':
 
 
 setup(
-    name = "yaa_settings",
+    name = "django-yaa-settings",
     version = VERSION,
     author = "Richard Terry",
     author_email = "code@radiac.net",
     description = ("Yet Another App Settings for Django"),
     license = "BSD",
-    url = "http://radiac.net/projects/yaa_settings/",
+    url = "http://radiac.net/projects/django-yaa-settings/",
     long_description=read('README.rst'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
