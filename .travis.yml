@@ -31,9 +31,9 @@ deploy:
   provider: pypi
   user: radiac
   password:
-    secure: UlOAJbdXXcdNci9gcfpLLldDxQJNWzQMnaTlN29CyH4MWvP+F1dGl8yl7RffzIb805EKVMOi4tLY+oA3x6ZS/Lis1QjpOC8erqgU0pMEHtF3ghR9qcd75GLz25AaDiX8G7SXdSwyedS8m+lxaiemGganGMhIKsme2lQV20iticTI8gb9I4dYBnSKcG8MfLcsU91usFyhadOP5EHqooG4+p+cF36Vk8ff0hW53/gttXrMoDs7zbfX7iJIXQPQp7fSg/g1KLgjcQQTNFSxpqCbqLPdFOKeCmhn2UlwIUWAxYHK3gNO2uyBiuAhle323AnB4ifWv+urG6Zw7712NPoJ53FVlxZ5+yf329aw2yCRFTgwfl4WV15ZWuvVgI//jUhlK47P/mjFb7RZjYu0c+9VqyzXccvXyuSM6fuyHQAzWYlz8Z26x5hSmAi5paQbGieoI5jOeWJ94YSUeWPRfW/7VVvx1nUztq8O2FNmMt3rYih1FiElWFpkSQ4WdEjXxbW6wgQL8v5PJy2puBS9jwTv7SrQ9aKAtwcxnn8U46+EKILuKdqalrRTIZbVthylaxl5yNO5To6z0Sou/mXQURvWUavGHAp05bRkr4XaL0ZWedivNSXsGQuHA8qmh5eiely4hr+6FMSBe8KvJv8JDryv+aCIHamTJjljU7AgEchIOrk=
+    secure: npwyX6aN9BUUQ4dZPiw+J+qiEIez/3pzRLLFi19goh0yTiIJ/K66rxNGtS9n+4BW0uqeHBRc6CPfPaeB757fzb5UzUNoHC8Szn+v3JP01BtcqDhFog5OQfyvNrDOyQQ8Zi+DX320rCCuDtgTsLVQ6aDY7UnnvS1A5yIi8v8nRkAt7OyH3zhZuZEd/s+f92bOwbv3PybrpKiiSigUhcYYNH9Kbf2GEYLW5+WwkUXey97oqsFZJcM7szVM/aAXWkYZcq39mMb7b2F4WAORDS2A8ai5zjU1XLJRA89MJBsdSnAKMXAz7IMzIA6vpf9nRp/yL+8SQLlfF+AALFOJQe+jVcByNTvq/BboGry5n9XrEIULSDCgZ5hruZr/aczG18VnQdV24Zn+EvRvj3PV59b2rrG/a/QwydJZ8xMc+NwIkW++WW5g+ZN4exi6/DGBkL3qfV9yK5UkD+Tfg4c3MP0lMhvORZQNZzJfp0FFRphQJHhkoeoE7GLR92MkvnFSzZ7ZlQUF+LUZr3erllbXnt7ulTRnYbhIDVDZkpW517fcG+5AvVeuLR+CboQKGxNxeY+GJRfm2D2a8Qc5IYMqBhylSOjqVP3IG9FQc+wte06Dy5+nv1QhR9wGjQr4Z9OSwUJ76Yq4VIzgwIj8wnAs3fD7M0QluMFbg8wNqnnE+n37uR8=
   on:
     tags: true
     distributions: sdist bdist_wheel
     repo: radiac/django-yaa-settings
-    condition: '$TOXENV = py36-django1.11'
+    condition: "$TOXENV = py36-django1.11"
