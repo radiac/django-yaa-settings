@@ -22,7 +22,7 @@ Features
 * Works with Django's settings overrides in tests
 
 
-Version 0.1.0; supports Django 1.8, 1.11 and 2.0 on Python 2.7 and 3.4 upwards.
+Version 0.1.2; supports Django 1.8, 1.11 and 2.0 on Python 2.7 and 3.4 upwards.
 
 
 Installation
@@ -135,3 +135,10 @@ Validate or standardise settings using methods
 A method on your ``AppSettings`` subclass will be called every time you access
 it, and will be passed the value you have defined in Django's settings. This
 allows you to validate settings, or process them ready for use.
+
+
+Changelog
+=========
+
+* 1.0.0, 2018-06-24: Released as stable
+* 0.1.0, 2018-06-24: Initial release
