@@ -22,7 +22,7 @@ Features
 * Works with Django's settings overrides in tests
 
 
-Version 0.1.2; supports Django 1.8, 1.11 and 2.0 on Python 2.7 and 3.4 upwards.
+Version 1.0.0; supports Django 1.8, 1.11 and 2.0 on Python 2.7 and 3.4 upwards.
 
 
 Installation
