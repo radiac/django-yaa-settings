@@ -4,7 +4,6 @@ AppSettings class
 import sys
 
 from django.conf import settings
-from django.utils import six
 
 Undefined = object()
 
@@ -19,7 +18,7 @@ class AppSettingsType(type):
         sys.modules[self.__module__] = self()
 
 
-class AppSettings(six.with_metaclass(AppSettingsType)):
+class AppSettings(metaclass=AppSettingsType):
     abstract = True
     prefix = None
 

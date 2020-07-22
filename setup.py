@@ -12,7 +12,6 @@ def read(fname):
 
 def runtests(args):
     "Run tests"
-    import django
     from django.conf import settings
     from django.core.management import execute_from_command_line
 
@@ -53,8 +52,9 @@ setup(
         "Framework :: Django",
         "Framework :: Django :: 2.2",
         "Framework :: Django :: 3.0",
+        "Framework :: Django :: 3.1",
     ],
-    extras_require={"dev": ["tox"],},
+    extras_require={"dev": ["tox"]},
     zip_safe=True,
     packages=find_packages(exclude=("docs", "tests*",)),
     include_package_data=True,

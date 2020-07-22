@@ -1,32 +1,37 @@
+dist: xenial
 language: python
-python: '3.6'
-sudo: required
-dist: trusty
 install:
 - pip install --upgrade pip wheel setuptools
 - pip install virtualenv tox
 script:
 - tox
-env:
-  matrix:
-  - TOXENV=py27-django1.8
-  - TOXENV=py34-django1.8
-  - TOXENV=py27-django1.11
-  - TOXENV=py34-django1.11
-  - TOXENV=py35-django1.11
-  - TOXENV=py36-django1.11
-  - TOXENV=py34-django2.0
-  - TOXENV=py35-django2.0
-  - TOXENV=py36-django2.0
 matrix:
   include:
+
   - python: '3.5'
-    env: TOXENV=py35-django1.11
-  exclude:
+    env: TOXENV=py35-django2.2
+
   - python: '3.6'
-    env: TOXENV=py35-django1.11
+    env: TOXENV=py36-django2.2
   - python: '3.6'
-    env: TOXENV=py35-django2.0
+    env: TOXENV=py36-django3.0
+  - python: '3.6'
+    env: TOXENV=py36-django3.1
+
+  - python: '3.7'
+    env: TOXENV=py37-django2.2
+  - python: '3.7'
+    env: TOXENV=py37-django3.0
+  - python: '3.7'
+    env: TOXENV=py37-django3.1
+
+  - python: '3.8'
+    env: TOXENV=py38-django2.2
+  - python: '3.8'
+    env: TOXENV py38-django3.0
+  - python: '3.8'
+    env: TOXENV=py38-django3.1
+
 deploy:
   provider: pypi
   user: radiac
@@ -36,4 +41,4 @@ deploy:
     tags: true
     distributions: sdist bdist_wheel
     repo: radiac/django-yaa-settings
-    condition: "$TOXENV = py36-django1.11"
+    condition: "$TOXENV = py38-django3.1"
