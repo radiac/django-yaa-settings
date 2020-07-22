@@ -22,7 +22,9 @@ Features
 * Works with Django's settings overrides in tests
 
 
-Version 1.0.0; supports Django 1.8, 1.11 and 2.0 on Python 2.7 and 3.4 upwards.
+Supports Django 2.2 to 3.1 on Python 3.5 to 3.8.
+
+Version 1.0.0 was the last version to support earlier versions of Django.
 
 
 Installation
@@ -140,5 +142,6 @@ allows you to validate settings, or process them ready for use.
 Changelog
 =========
 
+* 1.1.0, 2020-07-22: Moved supported Django to 2.2 to 3.1
 * 1.0.0, 2018-06-24: Released as stable
 * 0.1.0, 2018-06-24: Initial release
