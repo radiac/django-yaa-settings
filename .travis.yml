@@ -1,3 +1,4 @@
+os: linux
 dist: xenial
 language: python
 install:
@@ -28,7 +29,7 @@ matrix:
   - python: '3.8'
     env: TOXENV=py38-django2.2
   - python: '3.8'
-    env: TOXENV py38-django3.0
+    env: TOXENV=py38-django3.0
   - python: '3.8'
     env: TOXENV=py38-django3.1
 
@@ -39,6 +40,5 @@ deploy:
     secure: npwyX6aN9BUUQ4dZPiw+J+qiEIez/3pzRLLFi19goh0yTiIJ/K66rxNGtS9n+4BW0uqeHBRc6CPfPaeB757fzb5UzUNoHC8Szn+v3JP01BtcqDhFog5OQfyvNrDOyQQ8Zi+DX320rCCuDtgTsLVQ6aDY7UnnvS1A5yIi8v8nRkAt7OyH3zhZuZEd/s+f92bOwbv3PybrpKiiSigUhcYYNH9Kbf2GEYLW5+WwkUXey97oqsFZJcM7szVM/aAXWkYZcq39mMb7b2F4WAORDS2A8ai5zjU1XLJRA89MJBsdSnAKMXAz7IMzIA6vpf9nRp/yL+8SQLlfF+AALFOJQe+jVcByNTvq/BboGry5n9XrEIULSDCgZ5hruZr/aczG18VnQdV24Zn+EvRvj3PV59b2rrG/a/QwydJZ8xMc+NwIkW++WW5g+ZN4exi6/DGBkL3qfV9yK5UkD+Tfg4c3MP0lMhvORZQNZzJfp0FFRphQJHhkoeoE7GLR92MkvnFSzZ7ZlQUF+LUZr3erllbXnt7ulTRnYbhIDVDZkpW517fcG+5AvVeuLR+CboQKGxNxeY+GJRfm2D2a8Qc5IYMqBhylSOjqVP3IG9FQc+wte06Dy5+nv1QhR9wGjQr4Z9OSwUJ76Yq4VIzgwIj8wnAs3fD7M0QluMFbg8wNqnnE+n37uR8=
   on:
     tags: true
-    distributions: sdist bdist_wheel
     repo: radiac/django-yaa-settings
     condition: "$TOXENV = py38-django3.1"
