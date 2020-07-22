@@ -10,7 +10,7 @@ DATABASE = {
 
 test_settings = {
     "INSTALLED_APPS": [],
-    "DATABASES": {"default": DATABASE, "test": DATABASE,},
+    "DATABASES": {"default": DATABASE, "test": DATABASE},
     # Variables for testing
     "SET_ATTRIBUTE": "test",
     "SET_PROPERTY": "test",
