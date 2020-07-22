@@ -142,6 +142,6 @@ allows you to validate settings, or process them ready for use.
 Changelog
 =========
 
-* 1.1.0, 2020-07-22: Moved supported Django to 2.2 to 3.1
+* 1.1.0, 2020-07-22: Moved supported Django to 2.2 to 3.1 (#1, #2 - thanks to clinoge)
 * 1.0.0, 2018-06-24: Released as stable
 * 0.1.0, 2018-06-24: Initial release
