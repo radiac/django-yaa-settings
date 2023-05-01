@@ -21,10 +21,11 @@ Features
 * Provide defaults and validate user settings before use
 * Works with Django's settings overrides in tests
 
-
-Supports Django 2.2 to 3.1 on Python 3.5 to 3.8.
+Supports Django 2.2+ on Python 3.5+.
 
 Version 1.0.0 was the last version to support earlier versions of Django.
+
+This project is actively supported, but there are few moving parts so releases are infrequent.
 
 
 Installation
